@@ -4,8 +4,19 @@
 @import url("font-awesome.min.css");
 @import url("framework.css");
 
-/* Top Bar --------------------------------------------------------------------------------------------------------------- */
 
+/* Top Bar --------------------------------------------------------------------------------------------------------------- */
+@media (max-width : 500px) {
+	article{
+		margin: 0 auto;
+		display: flex;
+	}
+	a.btn a.btn.inverse {
+		align-items: center;
+
+	}
+
+}
 #topbar {
 	padding: 15px 0;
 	font-size: .8rem;
@@ -34,7 +45,12 @@
 #topbar i {
 	line-height: normal;
 }
-
+#navbar{
+	display: block;
+	position: fixed;
+	top: 0;
+	 transition: top 0.5s;
+}
 
 /* Header --------------------------------------------------------------------------------------------------------------- */
 
@@ -56,6 +72,7 @@
 
 #pageintro {
 	padding: 180px 0;
+
 }
 
 #pageintro article {
@@ -122,6 +139,13 @@
 
 .services>li>ul li i {
 	margin-right: 8px;
+}
+@media (min-width:700px) {
+.wrapper
+	li{
+		margin: 0 auto;
+	}
+
 }
 
 .clients {}
@@ -1327,4 +1351,3 @@ table a,
 		font-size: 1.6rem;
 	}
 }
-
